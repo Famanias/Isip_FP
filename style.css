@@ -16,6 +16,8 @@
 
 .calculator{
     background: #ffffff;
+    width: auto;
+    max-width: 443px;
     padding: 25px;
     border-radius: 50px;
 }
@@ -39,11 +41,16 @@ button{
 
 #display {
     height: 100px;
+    width: auto;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 30px;
-    margin: 20px 20px;
+    font-size: 50px;
+    margin: 15px 15px;
+    overflow-x: hidden;
+    background-color: #eeeeee;
+    border-radius: 25px;
+
   }
 
 button:hover{
@@ -70,4 +77,25 @@ table .textfield input{
 
 .btn-equal, #clear{
     width: 175px;
+}
+
+@media (max-width: 442px) {
+    button{
+        width: 50px;
+        height: 50px;
+    }
+    .btn-equal, #clear{
+        width: 125px;
+    }
+    #display{
+        font-size: 30px;
+        margin: 5px 10px;
+        height: 75px;
+        border-radius: 20spx;
+    }
+
+    .calculator{
+        max-width: 342.9px;
+    }
+    
 }
